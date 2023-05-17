@@ -41,7 +41,7 @@ if (!isset($_SESSION['auth']) || $_SESSION['auth'] !== true) {
         Brand: <input style="margin-bottom: 2%" type="text" name="brand" value="<?= $_SESSION["data_car"]["brand"] ?? '' ?>" required>
         Year of manufacture: <input style="margin-bottom: 2%" type="number" name="year" value="<?= $_SESSION["data_car"]["year"] ?? '' ?>" required>
         Color: <input style="margin-bottom: 2%" type="text" name="color" value="<?= $_SESSION["data_car"]["color"] ?? '' ?>" required>
-        Mileage (km): <input style="margin-bottom: 2%" type="text" name="mileage" value="<?= $_SESSION["data_car"]["mileage"] ?? '' ?>" required>
+        Mileage (km): <input style="margin-bottom: 2%" type="number" name="mileage" value="<?= $_SESSION["data_car"]["mileage"] ?? '' ?>" required>
         <button style="background-color: lightgreen; cursor: pointer;">Register</button>
     </form>
 
